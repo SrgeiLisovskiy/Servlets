@@ -23,6 +23,7 @@ public class PostController {
         response.getWriter().print(gson.toJson(data));
     }
 
+
     public void getById(long id, HttpServletResponse response) {
         response.setContentType(APPLICATION_JSON);
         final var gson = new Gson();
